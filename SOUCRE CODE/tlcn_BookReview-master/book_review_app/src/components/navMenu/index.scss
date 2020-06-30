@@ -1,0 +1,122 @@
+
+.bar{
+width: fit-content;
+padding: 4px;
+position: fixed;
+background-color: #FFFFFF;
+border: #EBEDF0 solid 1px;
+border-radius: 8px;
+  margin-right: 40px;
+  box-shadow: 0 2px 4px rgba(108,111,115,.1);
+.ant-menu-vertical{
+  border-right: none;
+}
+}
+.site-layout-content {
+  background: #fff;
+  padding: 24px;
+  min-height: 280px;
+}
+#components-layout-demo-top .logo {
+  width: 120px;
+  height: 31px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px 24px 16px 0;
+  float: left;
+}
+
+body{
+  background-color: #f8f8f8f8;
+}
+
+.minimize{
+  height: 57px !important
+}
+.ant-layout-header{ 
+  
+  background-color:rgb(255, 255, 255);
+  height: 200px;
+ }
+.container{
+    background-color: rgb(255, 251, 251);
+    max-width: 1200px;
+    max-height: 85px;
+    display: flex;
+    
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+      content: url('../../assets/unnamed.jpg');
+      height: 100%;
+      max-width: 200px;
+      // margin-right: 180px;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    // .searchBar{
+    //   // margin-left:400px;
+      
+    // }
+    .notify{
+      // margin-right: 300px;
+      
+      height: 80%;
+      width: 400px;
+      display: flex;
+      justify-content:flex-end;
+      align-items: center;
+      >span{
+        margin-left: 30px
+      }
+      .icon{
+        font-size: 25px;
+        :hover{
+          cursor: pointer;
+        }
+      }
+    }
+    .text_head{
+      width: 20000px;
+      display: block;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      line-height: 1em;
+      text-align: center;
+      font-size: 30px;
+      font-weight: 900;  
+      color: red;
+    }
+  }
+  
+  .container1{
+    background-color: rgb(255, 251, 251);
+    width: 1200px;
+    height: 60px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+    align-items: center;
+    .home{
+      font-size: 17px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .sub2{
+      font-size: 17px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+  }
+  .col-md-4 {
+    background-color: rgb(221, 7, 7);
+    // min-width: 992px;
+    width: 10%;
+    height: 40px;
+    position: static;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float:right;
+  }

@@ -1,0 +1,66 @@
+
+
+body{
+  background-color: #f8f8f8f8;
+}
+
+.minimize{
+  height: 57px !important
+}
+
+.nav{
+  transition: all 0.2s;
+  z-index: 9;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-bottom: 1px #DBDBDB solid; 
+  margin-bottom: 2rem;
+  &-subnav{
+
+   .ant-menu{
+     display: flex !important;
+     justify-content: center !important;  
+   }
+  }
+
+  .container-nav{
+    background-color: #FFFFFF;   
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 6rem;
+    transition: all .5s;
+    .logo{
+      content: url('../../assets/logo.png');
+      height: 100%;
+      max-width: 200px;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    .dangnhapbtn{
+      margin-left: 3rem;
+    }
+    .notify{
+      margin-right: 80px;
+      height: 80%;
+      width: 132px;
+      display: flex;
+      align-items: center;
+      >span{
+        margin-left: 26px
+      }
+      .icon{
+        font-size: 25px;
+        :hover{
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+

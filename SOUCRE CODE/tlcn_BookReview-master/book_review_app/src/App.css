@@ -1,0 +1,53 @@
+.footerdad{
+    background-color: rgb(54, 48, 48);
+    text-align: center;
+}
+.col-info{
+    margin:8rem 0rem ;
+    
+}
+.col-info1{
+    margin:8rem 0rem ;
+    
+}
+.col-info2{
+    margin:8rem 0rem ;
+    
+}
+.col-info-content-direct{
+    padding-left: 2rem;
+}
+.img7{
+    content: url('C:\Users\GL553\Documents\tlcn_BookReview-master (2)\tlcn_BookReview-master\book_review_app\src\assets\facebook.png');
+    
+  }
+.col-info-body {
+    text-align: left;
+    padding-left: 20rem;
+    font-size: large;
+    color: beige;
+}
+.col-info-body1 {
+    text-align: left;
+    padding-left: 13rem;
+    font-size: large;
+    color: beige;
+}
+.col-info-body2{
+    text-align: left;
+    padding-left: 5rem;
+    font-size: large;
+    color: beige;
+}
+.col-info-content {
+    margin-left: 3rem;
+}
+h2.col-info-title {
+    font-size: xx-large;
+    color:rgb(185, 154, 116);
+}
+.col-info-content-h3{
+    
+    color:beige;
+}
+

@@ -1,0 +1,61 @@
+.img_row{
+  &:hover{
+    cursor: pointer;
+  }
+  width: auto;
+  height: 30em;
+  object-fit: cover;
+}
+
+.test-form {
+  display: list-item;
+  margin-top: 200px;
+  text-align: center;
+}
+h1 {
+  font-weight: 700;
+  font-size: xxx-large;
+}
+h1.first {
+  font-size: 70px;
+  color: tomato;
+}
+h1.second {
+  font-weight: 300;
+}
+h1.third{
+  color: red;
+  font-weight: 300;
+  font-size: 40px;
+}
+.ant-card.card-name.ant-card-bordered {
+  width: fit-content;
+  margin: auto;
+  text-align: start;
+}
+audio {
+  
+    width: -webkit-fill-available;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.paragraph {
+
+  border: 3px solid #ebebeb;
+  border-radius: 5px;
+}
+.test-form {
+  display: list-item;
+  margin-top: 200px;
+  
+  background-color: #feffff;
+}
+h2{
+  margin-top: 0;
+    margin-bottom: 0.5em;
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 800;
+    text-align: center;
+}
