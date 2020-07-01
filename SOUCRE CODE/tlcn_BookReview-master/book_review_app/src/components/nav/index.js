@@ -146,11 +146,19 @@ function Index(props) {
                 <li onClick={() => props.history.push(`/main`)}>Trang chủ</li>
               </Menu.Item>
 
-              <SubMenu
-                className="sub2"
+              <Menu.Item
+                className="sub1"
+                key="alipay"
                 icon={<SettingOutlined />}
-                title="Về chúng tôi"
-              ></SubMenu>
+              >
+                <a
+                  onClick={() => props.history.push("/aboutme")}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Về chúng tôi
+                </a>
+              </Menu.Item>
 
               <Menu.Item
                 className="sub2"
@@ -173,14 +181,19 @@ function Index(props) {
                 <Menu.Item key="7">Khóa học miễn phí</Menu.Item>
                 <Menu.Item key="8">Khóa học có tính phí</Menu.Item>
               </SubMenu>
-              <SubMenu
-                className="sub2"
+              <Menu.Item
+                className="sub1"
+                key="alipay"
                 icon={<SettingOutlined />}
-                title="Tài liệu TOIEC"
               >
-                <Menu.Item key="7">Tổng hợp sách ôn luyện</Menu.Item>
-                <Menu.Item key="8">Ngữ pháp & Từ vựng ôn luyện</Menu.Item>
-              </SubMenu>
+                <a
+                  onClick={() => props.history.push("/document")}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Tài liệu ôn TOIEC
+                </a>
+              </Menu.Item>
               <SubMenu
                 className="sub2"
                 icon={<SettingOutlined />}

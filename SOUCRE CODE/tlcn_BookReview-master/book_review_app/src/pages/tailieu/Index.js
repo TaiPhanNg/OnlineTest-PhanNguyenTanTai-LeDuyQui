@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {
+  Card,
   Table,
   Divider,
   Tag,
@@ -44,6 +45,7 @@ function Index(props) {
     setVisible(false);
     setEdit(false);
   };
+  const { Meta } = Card;
   const loadData = () => {
     setLoadingData(true);
     axios({
@@ -138,10 +140,10 @@ function Index(props) {
         </Button> */}
 
       {/* <Table pagination={{ pageSize: 6 }} columns={columns} dataSource={data} loading={loadingData} className="content" /> */}
-      <h1 className="quiz-title">ĐỀ THI TOEIC CHÍNH THỨC</h1>
-      <h2>Các mẫu đề chính thức</h2>
+      <h1 className="quiz-title">BỘ TÀI LIỆU ÔN LUYỆN TOIEC MỚI</h1>
+      <h2></h2>
       <div className="listtrain2">
-        <h1 className="listtrain2-title"> List các đề thi thử toeic</h1>
+        <h1 className="listtrain2-title"> Q&T ACADEMY</h1>
         <List
           itemLayout="horizontal"
           dataSource={data}
@@ -151,20 +153,35 @@ function Index(props) {
             onChange: (page) => {
               console.log(page);
             },
-            pageSize: 3,
+            pageSize: 1,
           }}
           renderItem={(item) => (
             <List.Item>
-              <List.Item.Meta
-                className="listitem1"
-                onClick={() => props.history.push(`/doquiz/${item.id}`)}
-                avatar={
-                  <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
-                }
-                title={<a>TOEIC FOR {item.time}</a>}
-                description="ĐỀ THI CHÍNH THỨC 120 PHÚT"
-              />
+              <List.Item>
+              <Card
+                hoverable
+                style={{ width: 240 }, {margin:50}}
+                cover={<img alt="example" src="https://www.anhngumshoa.com/uploads/images/userfiles/2019/06/neweconomytoeic2019_1.jpg" />}
+              >
+                <Meta title="ECONOMY NEW 2020" description="https://www.facebook.com/toiecqt" />
+              </Card>
+              <Card
+                hoverable
+                style={{ width: 240 }, {margin:50}}
+                cover={<img alt="example" src="https://toeic24.vn/upload/postfeaturedimg/1578474970.jpg" />}
+              >
+                <Meta title="ETS 2O2O" description="https://www.facebook.com/toiecqt" />
+              </Card>
+              <Card
+                hoverable
+                style={{ width: 240 }, {margin:50}}
+                cover={<img alt="example" src="https://i.ytimg.com/vi/4Lt3KjtvIQ4/maxresdefault.jpg" />}
+              >
+                <Meta title="Barron's" description="https://www.facebook.com/toiecqt" />
+              </Card>
+              </List.Item>
             </List.Item>
+            
           )}
         />
         <h2 className="footer-d">Toeic Test Offical</h2>

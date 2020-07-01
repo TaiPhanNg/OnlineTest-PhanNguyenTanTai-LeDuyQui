@@ -11,7 +11,7 @@
     margin-left: 6rem;
   }
   .listtrain2{
-    background-color: #d7eeaa;
+    background-color: #ffffff;
     .listtrain-title{
       margin-top: 10rem;
     }
@@ -28,9 +28,15 @@
     background-color: beige;
     .quiz-title{
       font-size: 5rem;
-      margin-top: 3rem;
-      color: darkorange;
+      margin-top: 2rem;
+      color: rgb(255, 0, 0);
       margin-bottom: 0;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .listtrain2-title{
+      font-size: 2rem;
+      color: rgb(252, 113, 0);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
   }
   

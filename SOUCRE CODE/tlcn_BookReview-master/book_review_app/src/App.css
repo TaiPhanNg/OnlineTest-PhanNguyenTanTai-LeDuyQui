@@ -1,6 +1,7 @@
 .footerdad{
     background-color: rgb(54, 48, 48);
     text-align: center;
+    width: 2000px;
 }
 .col-info{
     margin:8rem 0rem ;
@@ -18,7 +19,7 @@
     padding-left: 2rem;
 }
 .img7{
-    content: url('C:\Users\GL553\Documents\tlcn_BookReview-master (2)\tlcn_BookReview-master\book_review_app\src\assets\facebook.png');
+    content: url('C:\Users\Win 10\Documents\GitHub\OnlineTest-PhanNguyenTanTai-LeDuyQui\SOUCRE CODE\tlcn_BookReview-master\book_review_app\src\assets\facebook.png');
     
   }
 .col-info-body {

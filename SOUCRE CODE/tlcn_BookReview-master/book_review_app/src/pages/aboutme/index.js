@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {
+  Typography,
   Table,
   Divider,
   Tag,
@@ -24,6 +25,7 @@ function Index(props) {
   const [visible, setVisible] = useState(false);
   const [edit, setEdit] = useState(false);
   const [idQuiz, setIdQuiz] = useState("");
+  const { Paragraph } = Typography;
   useEffect(() => {
     loadData();
   }, []);
@@ -138,11 +140,22 @@ function Index(props) {
         </Button> */}
 
       {/* <Table pagination={{ pageSize: 6 }} columns={columns} dataSource={data} loading={loadingData} className="content" /> */}
-      <h1 className="quiz-title">ĐỀ THI TOEIC CHÍNH THỨC</h1>
-      <h2>Các mẫu đề chính thức</h2>
+      <h1 className="quiz-title">VỀ CHÚNG TÔI: TOIEC ACADEMY Q&T</h1>
+      <h1 className="TamNhin">Tầm nhìn và ước mơ</h1>
       <div className="listtrain2">
-        <h1 className="listtrain2-title"> List các đề thi thử toeic</h1>
-        <List
+        <h1 className="listtrain2-title"> Sứ mệnh: Vươn tầm thế giới</h1>
+          <Paragraph className="Para1" ellipsis={{ rows: 2, expandable: true, symbol: 'more' }}>
+          Cải thiện cuộc sống thông qua giáo dục Chúng tôi tin tưởng hoàn toàn vào những thay đổi sâu sắc trong giáo dục đang và sẽ diễn ra rộng khắp thông qua việc áp dụng công nghệ vào giáo dục.
+          Và điều này, đối với chúng tôi, là rõ ràng, bởi lẽ công nghệ sẽ cho phép người học tiếp cận được với những kiến thức hữu ích bất kì lúc nào họ muốn, với cách trình bày phù hợp nhất với cách tiếp nhận thông tin của họ.
+          Khả năng cá nhân hóa việc học và luyện tập tối ưu cho từng người học sẽ mở ra một kỷ nguyên mới của giáo dục, và chắc chắn sẽ thay đổi hoàn toàn cách chúng ta nghĩ về giáo dục. Không những thế, công nghệ giúp chúng ta đạt được điều này với một chi phí đủ thấp để hầu hết mọi người có thể được giáo dục trong một môi trường tốt nhất - điều mà trước đây chỉ một số ít có được. Đọc thêm về tương lai của giáo dục dưới góc nhìn của Peter Hưng. Và vì thế, chúng tôi xác định sứ mệnh của mình là: Cải thiện cuộc sống thông qua giáo dục – Improving lives through education. 
+          </Paragraph>
+          <h1 className="listtrain2-title"> Ước mơ của tất cả chúng ta</h1>
+          <Paragraph className="Para1" ellipsis={{ rows: 2, expandable: true, symbol: 'more' }}>
+          Hi vọng những chia sẻ ở trên đã giúp bạn hiểu rõ hơn về chúng tôi . 
+          Và hi vọng nó đã giúp những bạn lần đầu tiên học online xóa đi những hoài nghi hay lo lắng nào của mình về việc học online ở chúng tôi. Và sau khi học hiệu quả, bạn cũng sẽ giới thiệu với bạn bè và người thân của mình để họ cũng sẽ có thể sử dụng được những giá trị vượt trội mà chúng tôi đang mang lại. Chắc chắn rằng cùng nhau chúng ta sẽ có thể mang tiếng Anh nói riêng và giáo dục đúng nghĩa nói chung đến với tất cả mọi người. Giáo dục chính là nền tảng quan trọng nhất để xây dựng nên một đất nước phát triển phồn vinh, đem đến một tương lai tốt đẹp cho thế hệ của chúng ta và những thế hệ tương lai. 
+          Thiết nghĩ, đó là là quyền lợi, là trách nghiệm, và cũng là ước mơ của tất cả chúng ta.
+          </Paragraph>
+        {/* <List
           itemLayout="horizontal"
           dataSource={data}
           className="content1"
@@ -166,8 +179,8 @@ function Index(props) {
               />
             </List.Item>
           )}
-        />
-        <h2 className="footer-d">Toeic Test Offical</h2>
+        /> */}
+        {/* <h2 className="footer-d">Toeic Test Offical</h2> */}
       </div>
     </div>
   );
