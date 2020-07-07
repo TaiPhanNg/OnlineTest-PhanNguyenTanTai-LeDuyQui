@@ -45,6 +45,7 @@ function Index(props) {
     const datta = [{ "name": "test1" }, { "name": "test2" }];
     const listItems = datta.map((d) => <li key={d.name}>{d.name}</li>);
     const showModal = () => {
+        console.log(datap)
         setVisible(true)
         console.log(visible)
     };
@@ -83,7 +84,10 @@ function Index(props) {
             } catch (err) {
                 arr = []
             }
+            
             setData([...arr])
+            console.log(1)
+            console.log(data)
             setLoadingData(false)
         })
     }

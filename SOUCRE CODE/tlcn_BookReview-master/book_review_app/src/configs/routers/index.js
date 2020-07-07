@@ -76,5 +76,4 @@ export const routers = [
     path:'/document',
     component:'tailieu'
   }
-
 ]

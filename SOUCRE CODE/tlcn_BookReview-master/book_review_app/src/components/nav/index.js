@@ -173,14 +173,6 @@ function Index(props) {
                   Diễn đàn trao đổi
                 </a>
               </Menu.Item>
-              <SubMenu
-                className="sub2"
-                icon={<SettingOutlined />}
-                title="Các khóa học online(sưu tầm)"
-              >
-                <Menu.Item key="7">Khóa học miễn phí</Menu.Item>
-                <Menu.Item key="8">Khóa học có tính phí</Menu.Item>
-              </SubMenu>
               <Menu.Item
                 className="sub1"
                 key="alipay"
